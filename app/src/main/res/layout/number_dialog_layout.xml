@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/number_input_layout"
+        android:layout_margin="5dp"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="नंबर डालें"
+            android:ems="10"
+            android:inputType="phone"  />
+    </com.google.android.material.textfield.TextInputLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="10dp"
+      android:layout_gravity="end|right">
+
+      <Button
+          android:id="@+id/cancel_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right|end"
+          android:background="@color/colorPrimary"
+          android:text="इसे रद्द करें"/>
+
+      <Button
+          android:id="@+id/save_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right|end"
+          android:layout_marginStart="10dp"
+          android:background="@color/colorPrimary"
+          android:text="नंबर सेव करे"/>
+
+  </LinearLayout>
+</LinearLayout>
